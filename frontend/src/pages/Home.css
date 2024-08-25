@@ -1,0 +1,42 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 100px 0;
+}
+
+.content-item {
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+h3 {
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+.anon-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btm-left {
+  margin: auto 20px 0 auto;
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  grid-column: span 2;
+  margin: 50px 0;
+}
+
+img {
+  width: 300px;
+}

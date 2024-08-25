@@ -1,0 +1,47 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  display: flex;
+  height: 10vw;
+  margin: 20px 20px;
+  padding: 10px;
+  border-top: 3px solid white;
+}
+
+h1 {
+  color: white;
+  padding-right: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+  padding: 10px;
+  border-top: 3px solid white;
+}
+
+.home-header {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.reservation {
+  height: 25px;
+  margin-left: auto;
+  padding: 5px 10px;
+}

@@ -1,0 +1,13 @@
+{
+  "include": ["src"],
+  "exclude": ["**/node_modules", "**/__pycache__"],
+  "pythonVersion": "3.12",
+  "reportMissingImports": "error",
+  "venvPath": "./backend/venv",
+  "executionEnvironments": [
+    {
+      "root": "src",
+      "extraPaths": ["src/libs"]
+    }
+  ]
+}

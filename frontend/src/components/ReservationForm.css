@@ -1,0 +1,95 @@
+.form-visible {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 500px; /* Limit max width */
+  height: auto; /* Allow height to adjust based on content */
+}
+
+.main-container {
+  padding: 20px; /* Adjust padding */
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.slot-picker {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  margin: 20px 0; /* Adjust margins */
+  padding: 5px;
+}
+
+h3 {
+  color: #191919;
+}
+
+.time-slots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 5px;
+}
+
+.button-slot {
+  border: 2px solid #191919;
+  padding: 10px;
+  text-align: center; /* Center text */
+}
+
+.button-slot.inverted {
+  filter: invert(1);
+}
+
+.form-inputs {
+  display: grid;
+  grid-template-columns: 1fr; /* Change to single column on smaller screens */
+  gap: 20px;
+  padding: 15px;
+}
+
+/* Basic input styling */
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  border-radius: 0;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  font-size: 15px;
+  height: 20px;
+  font-family: monospace;
+  font-weight: normal;
+  padding: 10px;
+}
+
+/* Customize the border color and remove border radius on focus */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+  border-color: #191919;
+  border-radius: 0;
+  outline: none;
+}
+
+#submit {
+  width: 100%; /* Full width on smaller screens */
+  padding: 10px;
+  justify-self: center;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .form-inputs {
+    grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  }
+
+  #submit {
+    grid-column: span 2; /* Span two columns */
+    width: auto; /* Adjust width */
+  }
+}
