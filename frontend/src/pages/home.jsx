@@ -24,8 +24,10 @@ const Home = () => {
         </p>
       </div>
       <div className="images">
-        <img src={loungeImage} alt="lounge area" />
-        <img src={barImage} alt="bar area" />
+        <img src={loungeImage} alt="ai generated lounge area" />{" "}
+        {/* ai created image */}
+        <img src={barImage} alt="ai generated bar area" />{" "}
+        {/* ai created image */}
       </div>
       <div className="content-item">
         <h3 className="home-header">Service</h3>

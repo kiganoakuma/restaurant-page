@@ -1,0 +1,47 @@
+.cocktail-menu-wrapper * {
+  list-style-type: none;
+}
+
+.cocktail-menu-wrapper {
+  padding: 1.5vw;
+}
+
+div.cocktail-menu-section.cocktail-specials,
+div.cocktail-menu-section.cocktail-classics,
+div.cocktail-menu-section.cocktail-desserts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1vw;
+}
+
+h2.cocktail-section-title {
+  margin: 3.5vw 0 2vw;
+}
+
+ul.cocktail-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+li.cocktail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+h3.cocktail-item-name {
+  font-size: 2vw;
+  padding-left: 1.3vw;
+}
+
+p.cocktail-item-description {
+  border: none;
+}
+
+span.cocktail-item-price {
+  margin: 0 2.5vw 0 auto;
+}
