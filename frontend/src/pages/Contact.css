@@ -1,0 +1,39 @@
+.contact-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+  width: 75vw;
+  padding: 4vw;
+}
+
+h2.contact-title {
+  align-self: center;
+  margin-bottom: 2vw;
+  color: gray;
+}
+
+div.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-self: center;
+  margin-bottom: 2vw;
+}
+
+strong {
+  color: #cfcfcf;
+}
+
+.contact-details-link {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-details-link:hover {
+  cursor: pointer;
+}
+
+div.mapView-container {
+  align-self: center;
+}
